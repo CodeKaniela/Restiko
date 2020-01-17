@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="nav" class="container-fluid mb-5">
+        <div class="p-3">
+            <img src="./img/logo.png" width="10%" class="img-fluid position-fixed" alt="logo">
+        </div>
+    </div>
+
+    <div id="firstpage" class="container-fluid mt-5 p-5">
+
+        <div class="row mt-5">
+
+            <div id="form1" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="laDate">Date</label>
+                        <input type="date" class="form-control" id="laDate">
+                    </div>
+                    <div class="form-group align-self-start">
+                        <label for="dayResume">Résume ta journée</label>
+                        <textarea class="form-control" id="dayResume" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn1" class="btn rounded-pill continueBtn p-2" onclick="btn1()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form2" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayLearn">Qu'est ce que tu as appris ?</label>
+                        <textarea class="form-control" id="dayLearn" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn2" class="btn rounded-pill continueBtn p-2" onclick="btn2()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form3" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayLike">Qu'est-ce que tu as aimé ?</label>
+                        <textarea class="form-control" id="dayLike" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn3" class="btn rounded-pill continueBtn p-2" onclick="btn3()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form4" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayNew">Qu'est-ce que tu as utilisé de nouveau ?</label>
+                        <textarea class="form-control" id="dayNew" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn4" class="btn rounded-pill continueBtn p-2" onclick="btn4()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form5" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayProb">Problématiques rencontrés</label>
+                        <textarea class="form-control" id="dayProb" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn5" class="btn rounded-pill continueBtn p-2" onclick="btn5()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form6" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayObject">Quels étaient tes objectifs ?</label>
+                        <textarea class="form-control" id="dayObject" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn6" class="btn rounded-pill continueBtn p-2" onclick="btn6()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form7" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayMore">Qu'est-ce que tu aurais voulu en plus ?</label>
+                        <textarea class="form-control" id="dayMore" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn7" class="btn rounded-pill continueBtn p-2" onclick="btn7()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form8" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayTeach">Un conseil pour le formateur ?</label>
+                        <textarea class="form-control" id="dayTeach" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="btn8" class="btn rounded-pill continueBtn p-2" onclick="btn8()">CONTINUER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="form9" class="col-6 formstyle">
+                <div>
+                    <div class="form-group align-self-start">
+                        <label for="dayNote">RESTIKO terminé ! Note ta journée !</label>
+                        <input type="text" class="form-control" name="" id="dayNote" aria-describedby="helpId"
+                            placeholder="/5">
+                        <!-- <div>
+                          <label for="dayNote">RESTIKO terminé ! Note ta journée !</label>
+                          <select class="form-control" name="" id="dayNote">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="row p-3 justify-content-center">
+                    <button id="subBtn" class="btn rounded-pill continueBtn p-2 " onclick="createRestiko(); btn9()">ENVOYER <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            <div id="returnScreen" class="col-6 formstyle">
+                <div class="row p-3 justify-content-center">
+                    <button id="homeBtn" class="btn rounded-pill continueBtn p-2 " onclick="goHome(); ">Go home <img
+                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                </div>
+            </div>
+
+            
+
+            <div id="yesterdayRestiko" class="col-5 p-5 ml-5">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sed eligendi nemo laborum cumque vel
+                    earum voluptate fuga animi, repellendus eius, libero amet. In ullam odio veritatis, deleniti tempora
+                    aperiam officiis dolorem voluptates rerum fugit incidunt temporibus exercitationem maxime laboriosam
+                    quidem? Neque quae obcaecati aut, suscipit fugit facere. Perferendis, sequi!</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/airtable.browser.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+</body>
+
+</html>
