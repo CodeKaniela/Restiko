@@ -9,15 +9,27 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div id="nav" class="container-fluid mb-5">
+    <div id="navbar" class="container-fluid mb-5">
         <div class="p-3">
-            <img src="./img/logo.png" width="10%" class="img-fluid position-fixed" alt="logo">
+            <img src="./img/logo.png" width="10%" class="img-fluid" alt="logo">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="veille.html">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restikolist.html" target="blank">RESTIKO LIST</a>
+                </li>
+            </ul>
         </div>
+
     </div>
+
+
 
     <div id="firstpage" class="container-fluid mt-5 p-5">
 
@@ -35,7 +47,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn1" class="btn rounded-pill continueBtn p-2" onclick="btn1()">CONTINUER <img
+                    <button id="btn1" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn1()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -48,7 +60,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn2" class="btn rounded-pill continueBtn p-2" onclick="btn2()">CONTINUER <img
+                    <button id="btn2" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn2()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -61,7 +73,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn3" class="btn rounded-pill continueBtn p-2" onclick="btn3()">CONTINUER <img
+                    <button id="btn3" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn3()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -74,7 +86,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn4" class="btn rounded-pill continueBtn p-2" onclick="btn4()">CONTINUER <img
+                    <button id="btn4" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn4()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -87,7 +99,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn5" class="btn rounded-pill continueBtn p-2" onclick="btn5()">CONTINUER <img
+                    <button id="btn5" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn5()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -100,7 +112,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn6" class="btn rounded-pill continueBtn p-2" onclick="btn6()">CONTINUER <img
+                    <button id="btn6" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn6()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -113,7 +125,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn7" class="btn rounded-pill continueBtn p-2" onclick="btn7()">CONTINUER <img
+                    <button id="btn7" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn7()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -126,7 +138,7 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="btn8" class="btn rounded-pill continueBtn p-2" onclick="btn8()">CONTINUER <img
+                    <button id="btn8" class="btn hvr-grow rounded-pill continueBtn p-2" onclick="btn8()">CONTINUER <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
@@ -150,19 +162,20 @@
                     </div>
                 </div>
                 <div class="row p-3 justify-content-center">
-                    <button id="subBtn" class="btn rounded-pill continueBtn p-2 " onclick="createRestiko(); btn9()">ENVOYER <img
-                            src="./img/triangle.png" height="18px" alt="flèche"></button>
+                    <button id="subBtn" class="btn hvr-grow rounded-pill continueBtn p-2 "
+                        onclick="createRestiko(); btn9()">ENVOYER <img src="./img/triangle.png" height="18px"
+                            alt="flèche"></button>
                 </div>
             </div>
 
             <div id="returnScreen" class="col-6 formstyle">
                 <div class="row p-3 justify-content-center">
-                    <button id="homeBtn" class="btn rounded-pill continueBtn p-2 " onclick="goHome(); ">Go home <img
+                    <button id="homeBtn" class="btn hvr-grow rounded-pill continueBtn p-2 " onclick="goHome(); ">Go home <img
                             src="./img/triangle.png" height="18px" alt="flèche"></button>
                 </div>
             </div>
 
-            
+
 
             <div id="yesterdayRestiko" class="col-5 p-5 ml-5">
                 <h2>Lorem, ipsum dolor.</h2>
@@ -174,11 +187,13 @@
         </div>
 
     </div>
+
+
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/airtable.browser.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/bootstrap.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
