@@ -1,7 +1,7 @@
 var Airtable = require('airtable');
 Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
-    apiKey: 'keyR6QkGlczrf68ef'
+    apiKey: ''
 });
 var base = Airtable.base('appwi10nothJfc4sd');
 
